@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    color: #5D5D7D;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-left{
+    display: inline-block;
+    width: 60%;
+    padding-left: 136px;
+    margin-top: 20%;
+}
+
+.container-right{
+    display: inline-block;
+    height: 100vh;
+    width: 40%;
+    position: absolute;
+    background-color: rgba(93, 93, 125, .16);
+}
+
+img{
+    position: relative;
+    top: 25%;
+    right: 130px;
+}
+
+h1{
+    width: 368px;
+    font-style: normal;
+    line-height: 80px; /* 114.286% */
+    font-size: 70px;
+}
+
+p{
+    width: 540px;
+    font-size: 28px;
+    font-style: normal;
+    line-height: 48px; /* 171.429% */
+    margin: 15px 0;
+    opacity: 0.6;
+}
+
+button{
+    width: 269px;
+    height: 62px;
+    background-color: #9499EA;;
+    box-shadow: (0px 10px 24px rgba(148, 153, 234, 0.10));
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+button:active{
+    opacity: .5;
+}
+
+a{
+    font-weight: 400;
+    line-height: normal;
+    color: #5D5D7D;
+    font-size: 28px;
+    margin-right: 41px;
+    cursor: pointer;
+}
+
+a:nth-child(2) {
+    opacity: .4;
+}
+
+a:hover{
+    opacity: 0.4;
+}
+
+a:active{
+    opacity: .8;
+}
+
+header{
+    margin: 24px 0 0 57px;}
+
+
+@media screen and (max-width: 900px) {
+    .container-left{
+        width: 100%;
+        height: 50%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-right{
+        width: 100%;
+        height: auto;
+        position: static;
+        display: block;
+        padding: 40px;
+    }
+
+    h1{
+        width: auto;
+        line-height: 52px; /* 144.444% */
+        font-size: 36px;
+        text-align: center;
+        margin: 58px 50px 0 50px;
+    }
+
+    p{
+        margin: 15px 40px;
+        width: auto;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        line-height: 24px; /* 171.429% */
+    }
+
+    button{
+        margin: 0 auto;
+        display: block;
+    }
+
+    img{
+        position: static;
+        max-width: 90%;
+    }
+
+    .header-aside{
+        display: none;
+    }
+}
